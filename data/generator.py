@@ -43,7 +43,7 @@ b = ''.join(b_list)
 
 
 #Writing File
-with open(f"{k}_{a}.in", 'w') as f:
+with open(f"{k}_{k_alpha_list[0]}{k_value_list[0]}.in", 'w') as f:
     f.write(f"{k}\n")
     for letter in k_alpha_list:
         f.write(str(letter))
