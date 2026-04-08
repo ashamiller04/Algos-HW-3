@@ -1,5 +1,6 @@
 #To Run: python generator.py [k]
 # k = number of chars in the alphabet
+# must be in \data directory in terminal
 
 import random
 import sys
@@ -34,9 +35,10 @@ k_value_list = [random.randint(0, 50) for _ in range(k)]
 
 
 #randomly generate strings of at least length 25
-string_length = random.randint(25, 35)
-a_list = [random.choice(full_alpha_list) for _ in range(string_length)]
-b_list = [random.choice(full_alpha_list) for _ in range(string_length)]
+a_length = random.randint(25, 35)
+b_length = random.randint(25, 35)
+a_list = [random.choice(full_alpha_list) for _ in range(a_length)]
+b_list = [random.choice(full_alpha_list) for _ in range(b_length)]
 
 a = ''.join(a_list)
 b = ''.join(b_list)

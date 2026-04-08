@@ -1,3 +1,7 @@
+#To Run: If you want to use input file "16_b43.in"
+#       python HVLCS.py 16 b43
+# must be in \src directory in terminal
+
 from get_input import get_input
 import sys
 
@@ -5,11 +9,16 @@ import sys
 def runHVLCS(k, letters, values, a, b):
     # returns a tuple of max value and one common subsequence of that value
 
-    #testing
-    return 10, "abcde"
+    n = len(a)
+    m = len(b)
+
+    #Initialize 2D matrix of size (n+1) * (m+1)
+
+    matrix = [[0] * (n + 1) for _ in range(m + 1)]
 
 
-
+#finding the actual subsequence from the dp matrix
+def findLCS(a, b, matrix):
 
 
 
