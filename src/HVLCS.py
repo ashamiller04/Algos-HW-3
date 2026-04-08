@@ -4,6 +4,7 @@
 
 from get_input import get_input
 import sys
+import time
 
 
 def runHVLCS(letters, values, a, b):
@@ -60,6 +61,22 @@ def HVLCS_output(k, arg1, letters, values, a, b):
         file.write("\n")
         file.write(str(result[1]))
 
+    #for testing
+    #print(result[0])
+    #print(result[1])
+    #print(len(a)*len(b))
+
+
+
 #runs program
+
+start = time.perf_counter()
+
 HVLCS_output(*get_input(f"{sys.argv[1]}_{sys.argv[2]}.in"))
+
+end = time.perf_counter()
+
+runtime = (end - start) * 1000 # in milliseconds
+
+#print(runtime)
 
