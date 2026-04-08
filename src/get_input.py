@@ -27,4 +27,6 @@ def get_input(filename):
             else:
                 values.append(val)
 
-    return letters, values, a, b
+        arg1 = letters[0] + values[0]
+
+    return k, arg1, letters, values, a, b

@@ -52,12 +52,13 @@ def findLCS(a, b, matrix):
 
 
 #creating output
-def HVLCS_output(letters, values, a, b):
+def HVLCS_output(k, arg1, letters, values, a, b):
     result = runHVLCS(letters, values, a, b)
 
-    print(result[0])
-    print(result[1])
-
+    with open(f"../data/{k}_{arg1}.out", 'w') as file:
+        file.write(str(result[0]))
+        file.write("\n")
+        file.write(str(result[1]))
 
 #runs program
 HVLCS_output(*get_input(f"{sys.argv[1]}_{sys.argv[2]}.in"))
