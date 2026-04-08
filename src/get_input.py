@@ -27,8 +27,4 @@ def get_input(filename):
             else:
                 values.append(val)
 
-    return k, letters, values, a, b
-
-
-#testing purposes
-#get_input("16_e29.in")
+    return letters, values, a, b

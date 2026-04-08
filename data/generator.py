@@ -37,8 +37,8 @@ k_value_list = [random.randint(0, 50) for _ in range(k)]
 #randomly generate strings of at least length 25
 a_length = random.randint(25, 35)
 b_length = random.randint(25, 35)
-a_list = [random.choice(full_alpha_list) for _ in range(a_length)]
-b_list = [random.choice(full_alpha_list) for _ in range(b_length)]
+a_list = [random.choice(k_alpha_list) for _ in range(a_length)]
+b_list = [random.choice(k_alpha_list) for _ in range(b_length)]
 
 a = ''.join(a_list)
 b = ''.join(b_list)
@@ -54,4 +54,3 @@ with open(f"{k}_{k_alpha_list[0]}{k_value_list[0]}.in", 'w') as f:
         f.write("\n")
     f.write(f"{a}\n")
     f.write(f"{b}")
-
