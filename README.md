@@ -20,12 +20,14 @@ Output files will be sent to the \data directory
 
 # Written Component Questions
 
-Question 1: Graphed runtime of 10 nontrivial files with string lengths >= 25
+**Question 1:** Graphed runtime of 10 nontrivial files with string lengths >= 25
 
 <img width="752" height="452" alt="image" src="https://github.com/user-attachments/assets/94133f9d-0870-4705-a120-d50fc83ce544" />
 
 
-Question 2: 
+
+
+**Question 2:** 
 
 OPT[i][j] is defined as the max value of a common subsequence between the the first i chars of string A and j chars of string B.
 
@@ -42,7 +44,9 @@ This recurrence equation works because each iteration builds on previously calcu
 and the final result has been stored in the matrix.
 
 
-Question 3: 
+
+
+**Question 3:** 
 ```
 for i = 0 to n:
   matrix[i][0] = 0
